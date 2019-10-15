@@ -112,11 +112,9 @@
           animation-delay: 1s;
 }
 
-#bandera {
-  width: 50px;
+.banderas {
+  width: 2.5em;
   margin-bottom: 20px;
-  border: 2px solid black;
-  border-radius: 999px;
 }
 
 .skip-intro {
