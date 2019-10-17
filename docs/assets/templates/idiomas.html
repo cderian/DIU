@@ -1,0 +1,18 @@
+<script id="idiomas" type="text/x-jsrender">
+    <div class="idiomas item-wrapper animated fadeIn">
+      <h2 class="title">{{:title}}</h2>
+      <div class="grid-container">
+        {{for items itemVar='~item'}}
+
+        <div class="grid-item idioma animated fadeInDown">
+          <h3 class="icon">{{:~item.idioma}}</h3>
+          
+          <button class="btn-idioma animated pulse idioma{{:~item.id}}" data-category={{:~item.id}}>
+            <img src="{{:~item.img}}"/>
+          </button>        
+        </div>
+        
+        {{/for}}
+      </div>
+    </div>
+  </script>

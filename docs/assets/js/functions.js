@@ -3,14 +3,24 @@ function appLoad() {
     $('#container').load('assets/templates/welcome.html');
   } else {
     $('#container').load('assets/templates/panel.html',function(){
-      renderPanel(categories);
+      renderIdiomas(idiomas);
     });
   }
 }
-function renderPanel() {
+function renderPanel(categories, idIdioma) {
   $('#container').load('assets/templates/panel.html',function(){
     var template = $.templates("#panel");
-    var htmlOutput = template.render(categories);
+    var bandera = idiomas.items[idIdioma-1].img;
+    var htmlOutput = template.render(categories, bandera);
+    $('#container').html(htmlOutput);
+    document.getElementById('bandera-idioma').src = bandera;
+  });
+}
+
+function renderIdiomas(){
+  $('#container').load('assets/templates/idiomas.html',function(){
+    var template = $.templates("#idiomas");
+    var htmlOutput = template.render(idiomas);
     $('#container').html(htmlOutput);
   });
 }
@@ -18,7 +28,7 @@ function renderPanel() {
 function renderIntro() {
   $('#container').load('assets/templates/introduccion.html',function(){
     var template = $.templates("#intros");
-    var htmlOutput = template.render(categories);
+    var htmlOutput = template.render(categoriesAleman);
     $('#container').html(htmlOutput);
 
   });
@@ -26,7 +36,7 @@ function renderIntro() {
 
 $.fn.renderLevels = function() {
   var categoryID = this.attr('data-category');
-  var levels = categories.items[categoryID-1];
+  var levels = categoriesAleman.items[categoryID-1];
   $('#container').load('assets/templates/levels.html',function(){
     var template = $.templates("#levels");
     var htmlOutput = template.render(levels);
@@ -41,7 +51,7 @@ $.fn.renderLevels = function() {
 $.fn.volverNiveles = function(){
   var actual = document.getElementById("quiz-data").getAttribute("data-category");
   console.log(actual);
-  var levels = categories.items[actual-1];
+  var levels = categoriesAleman.items[actual-1];
   $('#container').load('assets/templates/levels.html',function(){
     var template = $.templates("#levels");
     var htmlOutput = template.render(levels);
@@ -59,10 +69,10 @@ $.fn.volverIntros = function(){
   var introActual = actual.getAttribute("data-quiz");
   console.log(nivelActual);
 
-  var levels = categories.items[nivelActual-1];
+  var levels = categoriesAleman.items[nivelActual-1];
   $('#container').load('assets/templates/quiz.html',
     function() {
-      var quiz = categories.items[nivelActual-1].quiz[introActual-1];
+      var quiz = categoriesAleman.items[nivelActual-1].quiz[introActual-1];
       quiz['category'] = nivelActual;
       var template = $.templates("#quiz");
       var htmlOutput = template.render(quiz);
@@ -100,7 +110,7 @@ $.fn.renderQuiz = function (categoryID, quizID){
   }
   $('#container').load('assets/templates/quiz.html',
     function() {
-      var quiz = categories.items[categoryID-1].quiz[quizID-1];
+      var quiz = categoriesAleman.items[categoryID-1].quiz[quizID-1];
       quiz['category'] = categoryID;
       var template = $.templates("#quiz");
       var htmlOutput = template.render(quiz);
@@ -125,7 +135,7 @@ $.fn.checkAnswer = function (){
   var quiz = quizData.attr('data-quiz');
   var question = this.parents('.question').attr('data-question');
   var answer = this.attr('data-answer');
-  var correct = categories.items[category - 1].quiz[quiz - 1].questions[question - 1].correct;
+  var correct = categoriesAleman.items[category - 1].quiz[quiz - 1].questions[question - 1].correct;
   var compare = answer == correct ? true : false;
   var point = compare ? 1 : 0;
   var score = JSON.parse(localStorage.getItem("score"));
@@ -139,7 +149,7 @@ $.fn.getCorrectAnswer = function (){
   var category = quizData.attr('data-category');
   var quiz = quizData.attr('data-quiz');
   var question = this.parents('.question').attr('data-question');
-  var correct = categories.items[category - 1].quiz[quiz - 1].questions[question - 1].correct_answer;
+  var correct = categoriesAleman.items[category - 1].quiz[quiz - 1].questions[question - 1].correct_answer;
   return correct;
 }
 
@@ -192,7 +202,7 @@ $.fn.scoreResume = function(element) {
 
 function generateScoreRegistry(){
   score = {};
-  categories.items.forEach(function(category){
+  categoriesAleman.items.forEach(function(category){
     score["category"+category.id] = getQuizes(category.quiz);
   });
   console.log(score);

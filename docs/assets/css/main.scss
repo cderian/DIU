@@ -44,7 +44,7 @@
 }
 
 
-#bandera-alemania {
+#bandera-idioma {
   height: 6em;
   float: right;
 }
@@ -139,11 +139,6 @@
   animation-play-state: paused;
 }
 
-.panel {
-  opacity: 0.5;
-  font-family: 'Chewy', cursive;
-}
-
 .icon {
   font-size: 1.5em;
 }
@@ -166,9 +161,13 @@
   cursor: pointer;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
+.panel{
+  opacity: 0.5;
+  font-family: 'Chewy', cursive;
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 .category {

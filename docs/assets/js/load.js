@@ -8,13 +8,19 @@ $(function() {
     $.getJSON("assets/js/idiomy.json", function(data) {
       //content = JSON.parse(data);
       content = data;
-      categories = content.Categories;
+      idiomas = content.Idiomas;
+      categoriesAleman = idiomas.items[0].Categories;
+      categoriesItaliano = idiomas.items[1].Categories;
+      categoriesPortugues = idiomas.items[2].Categories;
+      
+      
       if (localStorage.getItem('score') == null) {
         generateScoreRegistry();
       }
       appLoad();
     });
   }
+
   $('#container').on('click', '.testinit', function(){
     testinitAudio.play();
     $(this).renderQuiz(0,0);
@@ -35,15 +41,52 @@ $(function() {
     $(this).volverIntros();//Llamamos a la función para obtener las introducciones actuales
   });
 
+  /*
   $('#container').on('click','.skip-intro',function(e){
     e.preventDefault();
     renderPanel(categories);
   });
+*/
+  /**
+   * Función para desplegar el menú de los idiomas disponibles
+   */
+  $('#container').on('click','.skip-intro',function(e){
+    e.preventDefault();
+    renderIdiomas(idiomas);
+  });
+
+  $('#container').on('click','.volver-idiomas',function(e){
+    console.log("Click Volver Idiomas");
+    
+    e.preventDefault();
+    renderIdiomas(idiomas);
+  });
+  
+  //Alemán
+  $('#container').on('click','.idioma1',function(e){
+    e.preventDefault();
+    renderPanel(categoriesAleman, 1);
+  });
+
+  //Italiano
+  $('#container').on('click','.idioma2',function(e){
+    e.preventDefault();
+    renderPanel(categoriesItaliano, 2);
+  });
+
+  //Portugués
+  $('#container').on('click','.idioma3',function(e){
+    e.preventDefault();
+    renderPanel(categoriesPortugues, 3);
+  });
+
 
   $('#container').on('click','.level',function(e){
     levelAudio.play();
     $(this).renderLevels();
   });
+
+
 });
 
 var levelAudio = new Audio();
