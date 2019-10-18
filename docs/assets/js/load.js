@@ -18,7 +18,7 @@ $(function() {
         generateScoreRegistry(categoriesAleman, categoriesItaliano, categoriesPortugues);
       }
       */
-      console.log("Local Storage:"+localStorage);
+      //console.log("Local Storage:"+JSON.stringify(localStorage));
       
       appLoad();
     });
