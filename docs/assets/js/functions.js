@@ -11,21 +11,26 @@ function appLoad() {
     });
   }
 }
+
+function renderIdiomas(){
+  banderaActual = ""; // Reiniciamos la url de la bandera 
+  idiomaActual = -1;  // Reiniciamos el índice del idioma
+  
+  $('#container').load('assets/templates/idiomas.html',function(){
+    var template = $.templates("#idiomas");
+    var htmlOutput = template.render(idiomas);
+    $('#container').html(htmlOutput);
+  });
+}
+
 function renderPanel(categories, idIdioma) {
   if (idiomaActual == -1) {
     idiomaActual = idIdioma;  // Actualizamos el valor del idioma a jugar
   }
-  //var tam = Object.keys(categories).length;
-  //console.log("Tam:"+tam);
   
   if(Object.keys(categories).length != 0){
-    //console.log("No hay categorias nuevas");
     categoriesActuales = categories;
-    //console.log("Categorias actuales:"+ categoriesActuales);
   }
-  console.log("Categorias Actuales:"+categoriesActuales);
-  console.log("Categorias Aleman:"+categoriesAleman);
-
 
   if (banderaActual == "") {
     banderaActual = idiomas.items[idIdioma-1].img;
@@ -40,17 +45,6 @@ function renderPanel(categories, idIdioma) {
 
 }
 
-function renderIdiomas(){
-  banderaActual = ""; // Reiniciamos la url de la bandera 
-  idiomaActual = -1;  // Reiniciamos el índice del idioma
-  
-  $('#container').load('assets/templates/idiomas.html',function(){
-    var template = $.templates("#idiomas");
-    var htmlOutput = template.render(idiomas);
-    $('#container').html(htmlOutput);
-  });
-}
-
 function renderIntro() {
   console.log("Desplegando Intros");
   
@@ -63,16 +57,18 @@ function renderIntro() {
 }
 
 $.fn.renderLevels = function() {
-  console.log("CategoriasActuales:"+categoriesActuales);
-  
+  console.log("Desplegando Niveles");
   var categoryID = this.attr('data-category');
   var levels = categoriesActuales.items[categoryID-1];
+  console.log("Bandera Idioma:"+banderaActual);
+  
+  
   $('#container').load('assets/templates/levels.html',function(){
     var template = $.templates("#levels");
     var htmlOutput = template.render(levels);
     $('#container').html(htmlOutput);
+    document.getElementById('bandera-idioma').src = banderaActual;
     var score = JSON.parse(localStorage.getItem("score"));
-    //console.log("SCORE RENDER LEVELS:"+localStorage.getItem("score"));
     
     $('.score').each(function(){
       $(this).printScorePanel(score);
@@ -148,6 +144,7 @@ $.fn.renderQuiz = function (categoryID, quizID){
       var template = $.templates("#quiz");
       var htmlOutput = template.render(quiz);
       $('#container').html(htmlOutput);
+      document.getElementById('bandera-idioma').src = banderaActual;  // Colocamos la bandera del idioma actual
       $('#items').load('assets/templates/question.html',
         function() {
           quiz.questions.forEach(function(question, index){
@@ -191,7 +188,6 @@ $.fn.printScorePanel = function(element) {
   var quiz = this.attr('data-quiz');
   var count=0, i = 0;
   var quizData = new Array();
-  //console.log("Elemento:"+JSON.stringify(element));
   
   quizData = element["idioma"+idiomaActual]["category"+category]["quiz"+quiz];
   for(var key in quizData) {

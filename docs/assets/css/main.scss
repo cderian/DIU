@@ -49,6 +49,12 @@
   float: right;
 }
 
+#bandera-idioma.bandera-quiz{
+  height: 1em;
+  margin: 10px 0px;
+  float: right;
+}
+
 @font-face {
   font-family: "KidsZone";
   src: url("./../css/Kids\ Zone.woff");
@@ -140,6 +146,7 @@
 }
 
 .icon {
+  font-family: 'Chewy', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5em;
 }
 
@@ -750,11 +757,12 @@
 }
 
 .nivel{
-  width: 10%;
+  width: 15%;
   background-color: #003333;
   font-family: 'Denk One', sans-serif;
   font-size: 2em;
   color: #ffffff;
+  padding: 0px 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 10px;
 }

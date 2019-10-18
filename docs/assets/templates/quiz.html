@@ -1,12 +1,12 @@
 <script id="quiz" type="text/x-jsrender">
   <div id="quiz-data" data-category="{{:category}}" data-quiz="{{:id}}">
-    <div class="nivel">{{:title}} </div>
+    <div class="nivel">{{:title}} <img id="bandera-idioma" class="bandera-quiz" src=""/> </div>
+
     <div id="intro">
       {{for intro}}
       
       <div class="intro item {{if id != 1}}hide {{else}} fadeInUp {{/if}}">
           <h2 class="title">Intro {{:id}} / 3</h2>
-
           <div class="boton">
             <button id="menu-levels" class="botones volver-niveles animated pulse" title="Volver a los Niveles">
                 <div class="imagen-niveles">

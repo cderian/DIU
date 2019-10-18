@@ -13,6 +13,13 @@
   padding: 2em;
 }
 
+.idioma .texto-idioma {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Chewy', cursive, 'Courier New', Courier, monospace;
+}
+
 .idioma button {
   display: inline;
   background-color: #3ab2b2;
@@ -35,8 +42,9 @@
   color: black;
 }
 
-.idioma img {
-  height: 150px;
-  min-height: 150px;
+.idioma .btn-idioma img {
+  height: 25%;
+  width: 25%;
+  min-width: 100px;
 }
 /*# sourceMappingURL=idiomas.css.map */

@@ -11,6 +11,13 @@
     color: #003333;
     margin: 1em;
     padding: 2em;
+    .texto-idioma{
+        padding: 0;
+        margin: 0;
+        font-size: 2em;
+        font-family: 'Chewy', cursive, 'Courier New', Courier, monospace;
+    }
+
     button{
         display: inline;
         background-color: #3ab2b2;
@@ -27,8 +34,12 @@
         transition: 0.5s;
         color: black;
     }
-    img{
-        height: 150px;
-        min-height: 150px;
+    .btn-idioma{
+
+        img{
+            height: 25%;
+            width: 25%;
+            min-width: 100px;
+        }
     }
 }
