@@ -1,5 +1,5 @@
 //reinicia los datos guardados en el navegador
-localStorage.removeItem("score");
+//localStorage.removeItem("score");
 var content = {}, categories = {};
 $(function() { 
   if (!storageAvailable('localStorage')) {
@@ -13,11 +13,10 @@ $(function() {
       categoriesItaliano = idiomas.items[1].Categories;
       categoriesPortugues = idiomas.items[2].Categories;
       
-      /*
       if (localStorage.getItem('score') == null) {
         generateScoreRegistry(categoriesAleman, categoriesItaliano, categoriesPortugues);
       }
-      */
+      
       //console.log("Local Storage:"+JSON.stringify(localStorage));
       
       appLoad();

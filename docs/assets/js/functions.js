@@ -38,11 +38,6 @@ function renderPanel(categories, idIdioma) {
     document.getElementById('bandera-idioma').src = banderaActual;
   });
 
-  if (localStorage.getItem('score') == null) {
-    generateScoreRegistry();
-  }
-
-
 }
 
 function renderIdiomas(){
@@ -242,10 +237,6 @@ $.fn.scoreResume = function(element) {
 
 function generateScoreRegistry(){
   score = {};
-  //console.log("Categories Aleman Item:"+aleman.items);
-  //console.log("Categories Italiano Item:"+italiano.items);
-  //console.log("Categories Italiano Item:"+italiano.items);
-  //console.log("Id Idioma ACtual:"+idiomaActual);
   
   // Para cada idioma generamos su diccionario con valores de los cuestionarios
   idiomas.items.forEach(function(idiom){
