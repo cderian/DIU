@@ -1,0 +1,42 @@
+.volver-idiomas {
+  float: left;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: #003333;
+  border-radius: 999px;
+  text-align: center;
+  border: 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.volver-idiomas .imagen {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background-image: url("./../img/iconos/menu-white.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.volver-idiomas:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #FFBB2F;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+.volver-idiomas:hover .imagen {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-image: url("./../img/iconos/menu-black.png");
+}
+/*# sourceMappingURL=secciones.css.map */

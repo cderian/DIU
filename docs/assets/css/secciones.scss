@@ -1,0 +1,33 @@
+.volver-idiomas{
+    float: left;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: #003333;
+    border-radius: 999px;
+    text-align: center;
+    border: 0px;
+    transition: 0.4s;
+
+    .imagen{
+        transition: 0.4s;
+        margin: auto;
+        width: 25px;
+        height: 25px;
+        background-image: url("./../img/iconos/menu-white.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.volver-idiomas:hover{
+    transition: 0.4s;
+    background-color: #FFBB2F;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: 0.7s;
+    .imagen{
+        transition: 0.4s;
+        background-image: url("./../img/iconos/menu-black.png");
+    }
+}

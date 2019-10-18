@@ -884,109 +884,109 @@
               "quiz" : [
                 {"id" : 1, "title" : "Nivel 1",
                   "intro": [
-                    {"id": 1, "img": "assets/img/categorias/colores/orange-slice.png", "text": "En alemán, el color <b>naranja</b> se dice <b>orange</b>."},
-                    {"id": 2, "img": "assets/img/categorias/colores/trees-green.png", "text": "En alemán, el color <b>verde</b> se dice <b>grün</b>"},
-                    {"id": 3, "img": "assets/img/categorias/colores/black-cat.png", "text": "En alemán, el color <b>negro</b> se dice <b>schwarz</b>"}
+                    {"id": 1, "img": "assets/img/categorias/colores/orange-slice.png", "text": "En Italia, el color <b>naranja</b> se dice <b>arancione</b>."},
+                    {"id": 2, "img": "assets/img/categorias/colores/trees-green.png", "text": "En Italia, el color <b>verde</b> se dice <b>verde</b>"},
+                    {"id": 3, "img": "assets/img/categorias/colores/black-cat.png", "text": "En Italia, el color <b>negro</b> se dice <b>nero</b>"}
                   ],
                   "questions" : [
                     {"id" : 1, "question" : "¿De qué color es la <b>naranja</b>?",
                       "imgurl" : "assets/img/categorias/colores/orange.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "weiß"},
-                        {"id" : 2, "answer" : "orange"},
-                        {"id" : 3, "answer" : "grau"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "orange"
+                      "correct_answer" : "arancione"
                     },
                     {"id" : 2, "question" : "¿De qué color son las hojas del árbol?",
                       "imgurl" : "assets/img/categorias/colores/trees-green.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "grün"},
-                        {"id" : 2, "answer" : "weiß"},
-                        {"id" : 3, "answer" : "braun"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "grün"
+                      "correct_answer" : "verde"
                     },
                     {"id" : 3, "question" : "¿De qué color es el gatito?",
                       "imgurl" : "assets/img/categorias/colores/black-cat.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "schwarz"},
-                        {"id" : 2, "answer" : "rot"},
-                        {"id" : 3, "answer" : "braun"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "schwarz"
+                      "correct_answer" : "nero"
                     }
                   ]
                 },
                 {"id" : 2, "title" : "Nivel 2",
                   "intro": [
-                    {"id": 1, "img": "assets/img/categorias/colores/like-red2.png", "text": "En Alemania, el color <b>rojo</b> se dice <b>rot</b>"},
-                    {"id": 2, "img": "assets/img/categorias/colores/car-blue.png", "text": "En Alemania, el color <b>azul</b> se dice <b>blau</b>"},
-                    {"id": 3, "img": "assets/img/categorias/colores/taxi-yellow.png", "text": "En Alemania, el color <b>amarillo</b> se dice <b>gelb</b>"}
+                    {"id": 1, "img": "assets/img/categorias/colores/like-red2.png", "text": "En Italia, el color <b>rojo</b> se dice <b>rosso</b>"},
+                    {"id": 2, "img": "assets/img/categorias/colores/car-blue.png", "text": "En Italia, el color <b>azul</b> se dice <b>blu</b>"},
+                    {"id": 3, "img": "assets/img/categorias/colores/taxi-yellow.png", "text": "En Italia, el color <b>amarillo</b> se dice <b>giallo</b>"}
                   ],
                   "questions" : [
                     {"id" : 1, "question" : "¿De qué color es el fuego?",
                       "imgurl" : "assets/img/categorias/colores/flame-red.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "weiß"},
-                        {"id" : 2, "answer" : "grün"},
-                        {"id" : 3, "answer" : "rot"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 3,
-                      "correct_answer" : "rot"
+                      "correct_answer" : "rosso"
                     },
                     {"id" : 2, "question" : "¿De qué color son las hojas del árbol?",
                       "imgurl" : "assets/img/categorias/colores/trees-green.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "grün"},
-                        {"id" : 2, "answer" : "weiß"},
-                        {"id" : 3, "answer" : "braun"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "grün"
+                      "correct_answer" : "verde"
                     },              
                     {"id" : 3, "question" : "¿De qué color es el carro?",
                       "imgurl" : "assets/img/categorias/colores/car-blue.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "blau"},
-                        {"id" : 2, "answer" : "schwarz"},
-                        {"id" : 3, "answer" : "braun"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "blau"
+                      "correct_answer" : "blu"
                     },
                     {"id" : 4, "question" : "¿De qué color es el gatito?",
                       "imgurl" : "assets/img/categorias/colores/black-cat.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "braun"},
-                        {"id" : 2, "answer" : "rot"},
-                        {"id" : 3, "answer" : "schwarz"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 3,
-                      "correct_answer" : "schwarz"
+                      "correct_answer" : "nero"
                     },
                     {"id" : 5, "question" : "¿De qué color es la estrella?",
                       "imgurl" : "assets/img/categorias/colores/star.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "gelb"},
-                        {"id" : 2, "answer" : "rot"},
-                        {"id" : 3, "answer" : "orange"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "gelb"
+                      "correct_answer" : "giallo"
                     },
                     {"id" : 6, "question" : "¿De qué color es la naranja?",
                       "imgurl" : "assets/img/categorias/colores/orange.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "weiß"},
-                        {"id" : 2, "answer" : "orange"},
-                        {"id" : 3, "answer" : "grau"}
+                        {"id" : 1, "answer" : "color1"},
+                        {"id" : 2, "answer" : "color2"},
+                        {"id" : 3, "answer" : "color3"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "orange"
+                      "correct_answer" : "arancione"
                     }
                   ]
                 },

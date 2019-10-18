@@ -213,7 +213,7 @@
       margin: auto;
       width: 25px;
       height: 25px;
-      background-image: url("./../img/home-blanco.png");
+      background-image: url("./../img/iconos/home-blanco.png");
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -223,7 +223,7 @@
     transition: 0.4s;
     background-color: #FFBB2F;
     .imagen{
-      background-image: url("./../img/home.png");
+      background-image: url("./../img/iconos/home.png");
     }
   }
 
@@ -233,11 +233,9 @@
 }
 
 .intro {
-  //padding: 2em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  //background-image: url("./../img/fondos/park_2.jpg");
 
   .content{
     b{
@@ -259,7 +257,7 @@
       margin: auto;
       width: 25px;
       height: 25px;
-      background-image: url("./../img/home-blanco.png");
+      background-image: url("./../img/iconos/home-blanco.png");
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -269,7 +267,7 @@
     transition: 0.4s;
     background-color: #FFBB2F;
     .imagen{
-      background-image: url("./../img/home.png");
+      background-image: url("./../img/iconos/home.png");
     }
   }
 
@@ -287,7 +285,7 @@
       margin: auto;
       width: 25px;
       height: 25px;
-      background-image: url("./../img/back-white.png");
+      background-image: url("./../img/iconos/back-white.png");
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -297,7 +295,7 @@
     background-color: #FFBB2F;
     .imagen-niveles{
       cursor: pointer;
-      background-image: url("./../img/back.png");
+      background-image: url("./../img/iconos/back.png");
     }
   }
 
@@ -355,7 +353,7 @@
   padding: 10px;
   width: 100px;
   height: 100px;
-  background-image: url("./../img/right-arrow.svg");
+  background-image: url("./../img/iconos/right-arrow.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #eccf0d;
@@ -380,7 +378,7 @@
   padding: 10px;
   width: 45px;
   height: 45px;
-  background-image: url("./../img/home.png");
+  background-image: url("./../img/iconos/home.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: transparent;
@@ -417,8 +415,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  //background-image: url("./../img/fondos/park_1.jpg");
-  //background-color: #efefef;
   height: auto;
   text-align: center;
   max-width: 1200px;
@@ -440,7 +436,7 @@
       margin: auto;
       width: 25px;
       height: 25px;
-      background-image: url("./../img/home-blanco.png");
+      background-image: url("./../img/iconos/home-blanco.png");
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -450,7 +446,7 @@
     transition: 0.4s;
     background-color: #FFBB2F;
     .imagen{
-      background-image: url("./../img/home.png");
+      background-image: url("./../img/iconos/home.png");
     }
   }
 
@@ -468,7 +464,7 @@
       margin: auto;
       width: 25px;
       height: 25px;
-      background-image: url("./../img/bback-white.png");
+      background-image: url("./../img/iconos/bback-white.png");
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -478,7 +474,7 @@
     background-color: #FFBB2F;
     .imagen-niveles{
       cursor: pointer;
-      background-image: url("./../img/bback.png");
+      background-image: url("./../img/iconos/bback.png");
     }
   }
 

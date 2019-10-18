@@ -1,3 +1,7 @@
+var idiomaActual = -1;
+var banderaActual = "";
+var categoriesActuales = {};
+
 function appLoad() {
   if(!localStorage.getItem('skip') === true) {
     $('#container').load('assets/templates/welcome.html');
@@ -8,16 +12,41 @@ function appLoad() {
   }
 }
 function renderPanel(categories, idIdioma) {
+  idiomaActual = idIdioma;  // Actualizamos el valor del idioma a jugar
+  //var tam = Object.keys(categories).length;
+  //console.log("Tam:"+tam);
+  
+  if(Object.keys(categories).length != 0){
+    //console.log("No hay categorias nuevas");
+    categoriesActuales = categories;
+    //console.log("Categorias actuales:"+ categoriesActuales);
+  }
+  console.log("Categorias Actuales:"+categoriesActuales);
+  console.log("Categorias Aleman:"+categoriesAleman);
+
+
+  if (banderaActual == "") {
+    banderaActual = idiomas.items[idIdioma-1].img;
+  }
+  
   $('#container').load('assets/templates/panel.html',function(){
     var template = $.templates("#panel");
-    var bandera = idiomas.items[idIdioma-1].img;
-    var htmlOutput = template.render(categories, bandera);
+    //var bandera = idiomas.items[idIdioma-1].img;
+    var htmlOutput = template.render(categoriesActuales, banderaActual);
     $('#container').html(htmlOutput);
-    document.getElementById('bandera-idioma').src = bandera;
+    document.getElementById('bandera-idioma').src = banderaActual;
   });
+
+  if (localStorage.getItem('score') == null) {
+    generateScoreRegistry(categoriesAleman, categoriesItaliano, categoriesPortugues);
+  }
+
+
 }
 
 function renderIdiomas(){
+  banderaActual = "";
+
   $('#container').load('assets/templates/idiomas.html',function(){
     var template = $.templates("#idiomas");
     var htmlOutput = template.render(idiomas);
@@ -26,22 +55,28 @@ function renderIdiomas(){
 }
 
 function renderIntro() {
+  console.log("Desplegando Intros");
+  
   $('#container').load('assets/templates/introduccion.html',function(){
     var template = $.templates("#intros");
-    var htmlOutput = template.render(categoriesAleman);
+    var htmlOutput = template.render(categoriesActuales);
     $('#container').html(htmlOutput);
 
   });
 }
 
 $.fn.renderLevels = function() {
+  console.log("CategoriasActuales:"+categoriesActuales);
+  
   var categoryID = this.attr('data-category');
-  var levels = categoriesAleman.items[categoryID-1];
+  var levels = categoriesActuales.items[categoryID-1];
   $('#container').load('assets/templates/levels.html',function(){
     var template = $.templates("#levels");
     var htmlOutput = template.render(levels);
     $('#container').html(htmlOutput);
     var score = JSON.parse(localStorage.getItem("score"));
+    console.log("SCORE RENDER LEVELS:"+localStorage.getItem("score"));
+    
     $('.score').each(function(){
       $(this).printScorePanel(score);
     });
@@ -51,12 +86,13 @@ $.fn.renderLevels = function() {
 $.fn.volverNiveles = function(){
   var actual = document.getElementById("quiz-data").getAttribute("data-category");
   console.log(actual);
-  var levels = categoriesAleman.items[actual-1];
+  var levels = categoriesActuales.items[actual-1];
   $('#container').load('assets/templates/levels.html',function(){
     var template = $.templates("#levels");
     var htmlOutput = template.render(levels);
     $('#container').html(htmlOutput);
     var score = JSON.parse(localStorage.getItem("score"));
+
     $('.score').each(function(){
       $(this).printScorePanel(score);
     });
@@ -69,10 +105,10 @@ $.fn.volverIntros = function(){
   var introActual = actual.getAttribute("data-quiz");
   console.log(nivelActual);
 
-  var levels = categoriesAleman.items[nivelActual-1];
+  var levels = categoriesActuales.items[nivelActual-1];
   $('#container').load('assets/templates/quiz.html',
     function() {
-      var quiz = categoriesAleman.items[nivelActual-1].quiz[introActual-1];
+      var quiz = categoriesActuales.items[nivelActual-1].quiz[introActual-1];
       quiz['category'] = nivelActual;
       var template = $.templates("#quiz");
       var htmlOutput = template.render(quiz);
@@ -110,7 +146,7 @@ $.fn.renderQuiz = function (categoryID, quizID){
   }
   $('#container').load('assets/templates/quiz.html',
     function() {
-      var quiz = categoriesAleman.items[categoryID-1].quiz[quizID-1];
+      var quiz = categoriesActuales.items[categoryID-1].quiz[quizID-1];
       quiz['category'] = categoryID;
       var template = $.templates("#quiz");
       var htmlOutput = template.render(quiz);
@@ -135,11 +171,11 @@ $.fn.checkAnswer = function (){
   var quiz = quizData.attr('data-quiz');
   var question = this.parents('.question').attr('data-question');
   var answer = this.attr('data-answer');
-  var correct = categoriesAleman.items[category - 1].quiz[quiz - 1].questions[question - 1].correct;
+  var correct = categoriesActuales.items[category - 1].quiz[quiz - 1].questions[question - 1].correct;
   var compare = answer == correct ? true : false;
   var point = compare ? 1 : 0;
   var score = JSON.parse(localStorage.getItem("score"));
-  score["category"+category]["quiz"+ quiz]["question"+ question]["points"] = point;
+  score["idioma"+idiomaActual]["category"+category]["quiz"+ quiz]["question"+ question]["points"] = point;
   localStorage.setItem("score",JSON.stringify(score));
   return compare;
 }
@@ -149,7 +185,7 @@ $.fn.getCorrectAnswer = function (){
   var category = quizData.attr('data-category');
   var quiz = quizData.attr('data-quiz');
   var question = this.parents('.question').attr('data-question');
-  var correct = categoriesAleman.items[category - 1].quiz[quiz - 1].questions[question - 1].correct_answer;
+  var correct = categoriesActuales.items[category - 1].quiz[quiz - 1].questions[question - 1].correct_answer;
   return correct;
 }
 
@@ -158,7 +194,9 @@ $.fn.printScorePanel = function(element) {
   var quiz = this.attr('data-quiz');
   var count=0, i = 0;
   var quizData = new Array();
-  quizData = element["category"+category]["quiz"+quiz];
+  console.log("Elemento:"+JSON.stringify(element));
+  
+  quizData = element["idoma1"]["category"+category]["quiz"+quiz];
   for(var key in quizData) {
     count += quizData[key].points;
     i++;
@@ -200,12 +238,18 @@ $.fn.scoreResume = function(element) {
   return count;
 }
 
-function generateScoreRegistry(){
+function generateScoreRegistry(aleman, italiano, portugues){
   score = {};
+  //console.log("Categories Aleman Item:"+aleman.items);
+  //console.log("Categories Italiano Item:"+italiano.items);
+  //console.log("Categories Italiano Item:"+italiano.items);
+  //console.log("Id Idioma ACtual:"+idiomaActual);
+  
   categoriesAleman.items.forEach(function(category){
-    score["category"+category.id] = getQuizes(category.quiz);
+    score["idioma"+idiomaActual] = {};
+    score["idioma"+idiomaActual]["category"+category.id] = getQuizes(category.quiz);
   });
-  console.log(score);
+  console.log("SCORE:"+JSON.stringify(score));
   localStorage.setItem("score",JSON.stringify(score));
 }
 
