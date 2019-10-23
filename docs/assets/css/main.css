@@ -273,11 +273,6 @@
   background-size: cover;
 }
 
-.intro .content b {
-  font-family: 'Denk One', sans-serif;
-  font-size: 1.5em;
-}
-
 .intro .btn-back {
   border: 0px;
   float: left;
@@ -383,10 +378,14 @@
 .intro .content {
   background-color: #8daccd;
   border-radius: 10px;
-  padding: 15px;
+  padding: 0px;
   color: #000040;
   font-size: 2em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Denk One', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.intro .content b {
+  font-size: 1.5em;
 }
 
 .next-button {
@@ -550,10 +549,10 @@
   border-radius: 10px;
   margin: 0px 0px 1em 0px;
   font-weight: normal;
+  font-family: 'Denk One', sans-serif;
 }
 
 .question .pregunta b {
-  font-family: 'Denk One', sans-serif;
   font-size: 1.4em;
 }
 
@@ -595,6 +594,7 @@
 }
 
 .resume {
+  width: 100%;
   text-align: center;
 }
 
@@ -801,7 +801,7 @@
 
 .incorrecto {
   background-color: #d33e43;
-  color: #79b8b8;
+  color: #FFF;
   width: 50%;
   padding: 10px 15px;
   border: 0px;
@@ -811,6 +811,7 @@
   margin: 15px;
   font-size: 1.2em;
   font-weight: bold;
+  font-family: 'Denk One', sans-serif;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
