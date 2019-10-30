@@ -1,5 +1,5 @@
 //reinicia los datos guardados en el navegador
-//localStorage.removeItem("score");
+localStorage.removeItem("score");
 var content = {}, categories = {};
 $(function() { 
   if (!storageAvailable('localStorage')) {
