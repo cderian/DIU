@@ -1527,210 +1527,210 @@
               "quiz" : [
                 {"id" : 1, "title" : "Nivel 1",
                   "intro": [
-                    {"id": 1, "img": "assets/img/categorias/numeros/one.png", "text": "El número <b>uno</b> en alemán se escribe <b>eins</b>"},
-                    {"id": 2, "img": "assets/img/categorias/numeros/two.png", "text": "El número <b>dos</b> en alemán se escribe <b>zwei</b>"},
-                    {"id": 3, "img": "assets/img/categorias/numeros/three.png", "text": "El número <b>tres</b> en alemán se escribe <b>drei</b>"}
+                    {"id": 1, "img": "assets/img/categorias/numeros/one.png", "text": "El número <b>uno</b> en italiano se escribe <b>Uno</b>"},
+                    {"id": 2, "img": "assets/img/categorias/numeros/two.png", "text": "El número <b>dos</b> en italiano se escribe <b>Due</b>"},
+                    {"id": 3, "img": "assets/img/categorias/numeros/three.png", "text": "El número <b>tres</b> en italiano se escribe <b>Tre</b>"}
                   ],
                   "questions" : [
-                    {"id" : 1, "question" : "¿Cómo se escribe '1' en alemán?",
+                    {"id" : 1, "question" : "¿Cómo se escribe '1' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/1.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "sechs"},
-                        {"id" : 2, "answer" : "ein"},
-                        {"id" : 3, "answer" : "vier"}
+                        {"id" : 1, "answer" : "Sei"},
+                        {"id" : 2, "answer" : "Uno"},
+                        {"id" : 3, "answer" : "Quattro"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "ein"
+                      "correct_answer" : "Uno"
                     },
-                    {"id" : 2, "question" : "¿Cómo se escribe '2' en alemán?",
+                    {"id" : 2, "question" : "¿Cómo se escribe '2' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/2.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "fünf"},
-                        {"id" : 3, "answer" : "drei"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Cinque"},
+                        {"id" : 3, "answer" : "Tre"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "zwei"
+                      "correct_answer" : "Due"
                     },
-                    {"id" : 3, "question" : "¿Cómo se escribe '3' en alemán?",
+                    {"id" : 3, "question" : "¿Cómo se escribe '3' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/3.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "sieben"},
-                        {"id" : 2, "answer" : "drei"},
-                        {"id" : 3, "answer" : "eins"}
+                        {"id" : 1, "answer" : "Sette"},
+                        {"id" : 2, "answer" : "Tre"},
+                        {"id" : 3, "answer" : "Uno"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "drei"
+                      "correct_answer" : "Tre"
                     }
                   ]
                 },
                 {"id" : 2, "title" : "Nivel 2",
                   "intro": [
-                    {"id": 1, "img": "assets/img/categorias/numeros/four.png", "text": "El número <b>cuatro</b> en alemán se escribe <b>vier</b>"},
-                    {"id": 2, "img": "assets/img/categorias/numeros/five.png", "text": "El número <b>cinco</b> en alemán se escribe <b>fünf</b>"},
-                    {"id": 3, "img": "assets/img/categorias/numeros/six.png", "text": "El número <b>seis</b> en alemán se escribe <b>sechs</b>"}
+                    {"id": 1, "img": "assets/img/categorias/numeros/four.png", "text": "El número <b>cuatro</b> en italiano se escribe <b>Quattro</b>"},
+                    {"id": 2, "img": "assets/img/categorias/numeros/five.png", "text": "El número <b>cinco</b> en italiano se escribe <b>Cinque</b>"},
+                    {"id": 3, "img": "assets/img/categorias/numeros/six.png", "text": "El número <b>seis</b> en italiano se escribe <b>Sei</b>"}
                   ],
                   "questions" : [
                     
-                    {"id" : 1, "question" : "¿Cómo se escribe '2' en alemán?",
+                    {"id" : 1, "question" : "¿Cómo se escribe '2' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/2.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "fünf"},
-                        {"id" : 3, "answer" : "drei"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Cinque"},
+                        {"id" : 3, "answer" : "Tre"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "zwei"
+                      "correct_answer" : "Due"
                     },
       
-                    {"id" : 2, "question" : "¿Cómo se escribe '4' en alemán?",
+                    {"id" : 2, "question" : "¿Cómo se escribe '4' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/4.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "sechs"},
-                        {"id" : 3, "answer" : "vier"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Sei"},
+                        {"id" : 3, "answer" : "Quattro"}
                       ],
                       "correct" : 3,
-                      "correct_answer" : "vier"
+                      "correct_answer" : "Quattro"
                     },
-                    {"id" : 3, "question" : "¿Cómo se escribe '3' en alemán?",
+                    {"id" : 3, "question" : "¿Cómo se escribe '3' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/3.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "sieben"},
-                        {"id" : 2, "answer" : "drei"},
-                        {"id" : 3, "answer" : "eins"}
+                        {"id" : 1, "answer" : "Sette"},
+                        {"id" : 2, "answer" : "Tre"},
+                        {"id" : 3, "answer" : "Uno"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "drei"
+                      "correct_answer" : "Tre"
                     },
-                    {"id" : 4, "question" : "¿Cómo se escribe '1' en alemán?",
+                    {"id" : 4, "question" : "¿Cómo se escribe '1' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/1.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "sechs"},
-                        {"id" : 2, "answer" : "ein"},
-                        {"id" : 3, "answer" : "vier"}
+                        {"id" : 1, "answer" : "Sei"},
+                        {"id" : 2, "answer" : "Uno"},
+                        {"id" : 3, "answer" : "Quattro"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "ein"
+                      "correct_answer" : "Uno"
                     },
-                    {"id" : 5, "question" : "¿Cómo se escribe '6' en alemán?",
+                    {"id" : 5, "question" : "¿Cómo se escribe '6' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/6.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "eins"},
-                        {"id" : 2, "answer" : "acht"},
-                        {"id" : 3, "answer" : "sechs"}
+                        {"id" : 1, "answer" : "Uno"},
+                        {"id" : 2, "answer" : "Otto"},
+                        {"id" : 3, "answer" : "Sei"}
                       ],
                       "correct" : 3,
-                      "correct_answer" : "sechs"
+                      "correct_answer" : "Sei"
                     },
-                    {"id" : 6, "question" : "¿Cómo se escribe '5' en alemán?",
+                    {"id" : 6, "question" : "¿Cómo se escribe '5' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/5.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "fünf"},
-                        {"id" : 3, "answer" : "neun"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Cinque"},
+                        {"id" : 3, "answer" : "Nove"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "fünf"
+                      "correct_answer" : "Cinque"
                     }
                   ]
                 },
                 {"id" : 3, "title" : "Nivel 3",
                   "intro": [
-                    {"id": 1, "img": "assets/img/categorias/numeros/seven.png", "text": "El número <b>siete</b> en alemán se escribe <b>sieben</b>"},
-                    {"id": 2, "img": "assets/img/categorias/numeros/eight.png", "text": "El número <b>ocho</b> en alemán se escribe <b>acht</b>"},
-                    {"id": 3, "img": "assets/img/categorias/numeros/nine.png", "text": "El número <b>nueve</b> en alemán se escribe <b>neun</b>"}
+                    {"id": 1, "img": "assets/img/categorias/numeros/seven.png", "text": "El número <b>siete</b> en italiano se escribe <b>Sette</b>"},
+                    {"id": 2, "img": "assets/img/categorias/numeros/eight.png", "text": "El número <b>ocho</b> en italiano se escribe <b>Otto</b>"},
+                    {"id": 3, "img": "assets/img/categorias/numeros/nine.png", "text": "El número <b>nueve</b> en italiano se escribe <b>Nove</b>"}
                   ],
                   "questions" : [
-                    {"id" : 1, "question" : "¿Cómo se escribe '5' en alemán?",
+                    {"id" : 1, "question" : "¿Cómo se escribe '5' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/5.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "fünf"},
-                        {"id" : 3, "answer" : "neun"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Cinque"},
+                        {"id" : 3, "answer" : "Nove"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "fünf"
+                      "correct_answer" : "Cinque"
                     },
-                    {"id" : 2, "question" : "¿Cómo se escribe '1' en alemán?",
+                    {"id" : 2, "question" : "¿Cómo se escribe '1' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/1.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "sechs"},
-                        {"id" : 2, "answer" : "ein"},
-                        {"id" : 3, "answer" : "vier"}
+                        {"id" : 1, "answer" : "Sei"},
+                        {"id" : 2, "answer" : "Uno"},
+                        {"id" : 3, "answer" : "Quattro"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "ein"
+                      "correct_answer" : "Uno"
                     },
-                    {"id" : 3, "question" : "¿Cómo se escribe '9' en alemán?",
+                    {"id" : 3, "question" : "¿Cómo se escribe '9' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/9.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "neun"},
-                        {"id" : 2, "answer" : "fünf"},
-                        {"id" : 3, "answer" : "acht"}
+                        {"id" : 1, "answer" : "Nove"},
+                        {"id" : 2, "answer" : "Cinque"},
+                        {"id" : 3, "answer" : "Otto"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "neun"
+                      "correct_answer" : "Nove"
                     },
-                    {"id" : 4, "question" : "¿Cómo se escribe '3' en alemán?",
+                    {"id" : 4, "question" : "¿Cómo se escribe '3' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/3.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "sieben"},
-                        {"id" : 2, "answer" : "drei"},
-                        {"id" : 3, "answer" : "eins"}
+                        {"id" : 1, "answer" : "Sette"},
+                        {"id" : 2, "answer" : "Tre"},
+                        {"id" : 3, "answer" : "Uno"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "drei"
+                      "correct_answer" : "Tre"
                     },
-                    {"id" : 5, "question" : "¿Cómo se escribe '2' en alemán?",
+                    {"id" : 5, "question" : "¿Cómo se escribe '2' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/2.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "fünf"},
-                        {"id" : 3, "answer" : "drei"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Cinque"},
+                        {"id" : 3, "answer" : "Tre"}
                       ],
                       "correct" : 1,
-                      "correct_answer" : "zwei"
+                      "correct_answer" : "Due"
                     },
-                    {"id" : 6, "question" : "¿Cómo se escribe '7' en alemán?",
+                    {"id" : 6, "question" : "¿Cómo se escribe '7' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/7.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "sechs"},
+                        {"id" : 1, "answer" : "Sei"},
                         {"id" : 2, "answer" : "zehn"},
-                        {"id" : 3, "answer" : "sieben"}
+                        {"id" : 3, "answer" : "Sette"}
                       ],
                       "correct" : 3,
-                      "correct_answer" : "sieben"
+                      "correct_answer" : "Sette"
                     },
-                    {"id" : 7, "question" : "¿Cómo se escribe '4' en alemán?",
+                    {"id" : 7, "question" : "¿Cómo se escribe '4' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/4.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "sechs"},
-                        {"id" : 3, "answer" : "vier"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Sei"},
+                        {"id" : 3, "answer" : "Quattro"}
                       ],
                       "correct" : 3,
-                      "correct_answer" : "vier"
+                      "correct_answer" : "Quattro"
                     },
-                    {"id" : 8, "question" : "¿Cómo se escribe '6' en alemán?",
+                    {"id" : 8, "question" : "¿Cómo se escribe '6' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/6.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "eins"},
-                        {"id" : 2, "answer" : "acht"},
-                        {"id" : 3, "answer" : "sechs"}
+                        {"id" : 1, "answer" : "Uno"},
+                        {"id" : 2, "answer" : "Otto"},
+                        {"id" : 3, "answer" : "Sei"}
                       ],
                       "correct" : 3,
-                      "correct_answer" : "sechs"
+                      "correct_answer" : "Sei"
                     },
-                    {"id" : 9, "question" : "¿Cómo se escribe '8' en alemán?",
+                    {"id" : 9, "question" : "¿Cómo se escribe '8' en italiano?",
                       "imgurl" : "assets/img/categorias/numeros/8.png",
                       "answers" : [
-                        {"id" : 1, "answer" : "zwei"},
-                        {"id" : 2, "answer" : "acht"},
-                        {"id" : 3, "answer" : "vier"}
+                        {"id" : 1, "answer" : "Due"},
+                        {"id" : 2, "answer" : "Otto"},
+                        {"id" : 3, "answer" : "Quattro"}
                       ],
                       "correct" : 2,
-                      "correct_answer" : "acht"
+                      "correct_answer" : "Otto"
                     }
                   ]
                 }
